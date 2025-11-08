@@ -1,1 +1,13 @@
+# Cartoon Jumping Ball Adventure
 
+A small browser-based arcade game where a cheerful ball dashes through three cartoon-inspired worlds. Pick one of three characters, jump over wobbling obstacles, and enjoy playful sound effects every time you bounce.
+
+## Playing the game
+
+1. Open `index.html` in a modern desktop or mobile browser.
+2. Choose a favorite character on the start screen, then press **Start Adventure**.
+3. Tap or press the **space bar** to jump over obstacles.
+4. Clear the target number of obstacles to advance through all three levels.
+5. You have three lives—colliding with an obstacle costs one. Survive to the end to win!
+
+The jump sound uses the Web Audio API, so your first interaction will unlock audio playback if your browser suspends it initially.

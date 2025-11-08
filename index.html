@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartoon Jumping Ball Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Cartoon Jumping Ball Adventure</h1>
+    <p class="tagline">Bounce through whimsical worlds and reach the sky!</p>
+  </header>
+
+  <main>
+    <section class="hud">
+      <div class="hud-item">Level: <span id="level-display">1</span></div>
+      <div class="hud-item">Score: <span id="score-display">0</span></div>
+      <div class="hud-item">Lives: <span id="lives-display">3</span></div>
+    </section>
+
+    <canvas id="game-canvas" width="900" height="500" aria-label="Jumping ball game area"></canvas>
+
+    <div class="overlay" id="start-overlay" role="dialog" aria-modal="true">
+      <div class="overlay-card">
+        <h2>Choose Your Hero</h2>
+        <p>Select a ball buddy to begin your bouncing quest.</p>
+        <div class="character-grid" id="character-grid" role="list"></div>
+        <button id="start-button" disabled>Start Adventure</button>
+        <p class="controls">Press <strong>space</strong> or <strong>tap</strong> to jump</p>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="message-overlay" role="alertdialog" aria-modal="true">
+      <div class="overlay-card">
+        <h2 id="message-title">Level Complete!</h2>
+        <p id="message-body">Prepare for the next challenge!</p>
+        <button id="continue-button">Continue</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Created for playful jumping fun – enjoy the bouncy ride!</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
